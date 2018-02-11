@@ -24,13 +24,21 @@ var connectHandler = function connected () {
 	eventEmitter.emit('data_received');
 }
 
+var sendDataHandler = function senddata () {
+	console.log('send data');
+}
+
 //绑定事件处理程序
 eventEmitter.on('connection', connectHandler);
 
 //使用匿名函数绑定data_received事件
 eventEmitter.on('data_received', function(){
 	console.log('data receive success.')
+
+	eventEmitter.emit('senddata')
 	});
+	
+eventEmitter.addListener('senddata', sendDataHandler);
 
 //触发connection事件
 eventEmitter.emit('connection');
