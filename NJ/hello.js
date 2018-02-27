@@ -1,5 +1,6 @@
+//一个js文件，是一个模块
+'use strict'
 
-//ģ���ʹ��
 function Hello() {
 	console.log('hello world');
 	
@@ -8,4 +9,11 @@ function Hello() {
 		};
 };
 
-module.exports  = Hello;
+
+function Greet(name){
+	var s = 'hello:'+name;
+	console.log(s);
+}
+
+module.exports.Hello  = Hello;
+module.exports.Greet = Greet;

@@ -1,18 +1,19 @@
-[Folders]
-Base=1
-
 [Open Files]
 Active File Display Mode=1
-Active File Index=1
+Active File Index=2
 Open File Line0=0
 Open File Line1=0
-Open File Pos0=66
-Open File Pos1=67
-Open File Window Pos0=0,1,-1,-1,-1,-1,5,31,1708,942
-Open File Window Pos1=0,1,-1,-1,-1,-1,5,31,1708,942
-Open File0=.+AFw-hello.js
-Open File1=.+AFw-mian.js
-Open File2=
+Open File Line2=16
+Open File Pos0=84
+Open File Pos1=133
+Open File Pos2=283
+Open File Window Pos0=0,1,-1,-1,-1,-1,5,31,1123,530
+Open File Window Pos1=0,1,-1,-1,-1,-1,5,31,1123,530
+Open File Window Pos2=0,1,-1,-1,-1,-1,5,31,1123,530
+Open File0=.+AFw-mian.js
+Open File1=.+AFw-hello.js
+Open File2=.+AFw-example+AFw-main.js
+Open File3=
 Remember Files=1
 
 [Project Information]

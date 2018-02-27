@@ -1,5 +1,7 @@
 //main.js
+'use strict'
 
-var Hello = require('./hello')
-hello = new Hello();
+var helloExports = require('./hello')
+var hello = new helloExports.Hello();
 hello.sayHello();
+helloExports.Greet('Mike');
