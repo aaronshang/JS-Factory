@@ -1,3 +1,10 @@
+/*
+ 要点:
+ 1 创建的每一个函数都有原型属性，本质是一个指针，指向原型对象 
+ 2 原型对象包含实例共享的属性和方法
+
+*/
+
 'use strict'
 
 //array 对象
@@ -19,3 +26,7 @@ function Student(name){
 var xiaoming = new Student('xiaoming');
 console.log(xiaoming.name);
 xiaoming.hello();
+
+// 传统的类有集成的概念，但js采用的是原型继承，无法直接扩展
+// 必须借助一个中间对象来实现正确的原型链
+// js原型链继承
