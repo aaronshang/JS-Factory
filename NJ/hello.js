@@ -11,7 +11,7 @@ function Hello() {
 
 
 function Greet(name){
-	var s = 'hello:'+name;
+	var s = 'hello:'+arguments[0];
 	console.log(s);
 }
 
