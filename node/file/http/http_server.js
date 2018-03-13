@@ -1,3 +1,12 @@
+/**
+ * Node.js开发的目的就是为了使用JavaScript编写Web服务程序。
+ * 自带http模块，利用其提供的request和response对象。
+ * request对象，封装了http请求
+ * response对象，封装了http响应
+ * 第一个HTTP服务器程序！
+ */
+
+
 'use strict'
 
 var http = require('http');
