@@ -14,7 +14,7 @@
 
 //从命令行参数获取root目录，默认是当前目录
 var root = path.resolve(process.argv[2] || '.');
-
+root = path.join(root, 'file_server');
 console.log('Static root dir:' + root);
 
 //创建服务器
@@ -22,16 +22,16 @@ var server = http.createServer(function(request, response){
 
     //获取URL的path，类似"/css/bootstrap.css
     var pathname = url.parse(request.url).pathname;
-
+    console.log(pathname);
     //获取对应的本地文件路径, "/srv/css/bootstrap.css"
     var filepath = path.join(root, pathname);
-
+    console.log(filepath);
     //获取文件状态
     fs.stat(filepath, function(err, stats){
         if (!err && stats.isFile) {
             
             //文件存在
-            response.log('200'+request.url);
+            console.log('200'+request.url);
             response.writeHead(200);
             //将文件流导向response
             fs.createReadStream(filepath).pipe(response);
@@ -42,3 +42,5 @@ var server = http.createServer(function(request, response){
     });
 
 });
+
+server.listen(8080);
